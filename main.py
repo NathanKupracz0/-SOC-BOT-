@@ -23,53 +23,6 @@ async def on_ready():
 async def on_member_join(member):
     await member.send(f"Welcome to the server, {member.name}!")
 
-@bot.event
-async def on_message(message):
-    if message.author == bot.user:
-        return
-    if "nazi" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "chink" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "cooney" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "cotton picker" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "curry muncher" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "gringo" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "gypsy" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "jiggaboo" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "jiggerboo" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "nigger" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "nigga" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "pickaninny" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    if "shitskin" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention}, such language is not allowed here.")
-    await bot.process_commands(message)   
-
-
-
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
 
 @bot.command()
