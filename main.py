@@ -23,10 +23,10 @@ async def on_ready():
 async def on_member_join(member):
     await member.send(f"Welcome to the server, {member.name}!")
 
-bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+    bot.run(token, log_handler=handler, log_level=logging.DEBUG)
 
 @bot.command()
 async def hello(ctx):
     await ctx.send("Hello! How can I assist you today?")
 
-bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+    bot.run(token, log_handler=handler, log_level=logging.DEBUG)
